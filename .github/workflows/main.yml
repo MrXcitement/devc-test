@@ -1,0 +1,19 @@
+name: Build and publish devcontainer
+
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  test:
+    name: Test development container
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build devcontainer image
+        uses: devcontainers/ci@v0.3
+        with:
+          subFolder: images/debian
+          runCmd: uname -a
