@@ -15,5 +15,5 @@ jobs:
       - name: Build devcontainer image
         uses: devcontainers/ci@v0.3
         with:
-          subFolder: images/debian
+          subFolder: images/cobol
           runCmd: uname -a

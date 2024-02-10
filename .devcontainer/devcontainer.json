@@ -12,6 +12,7 @@
 			"moby": "false"
 		},
 		"ghcr.io/devcontainers-contrib/features/devcontainers-cli:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {},
 		"ghcr.io/devcontainers-contrib/features/act:1": {}
 	}
 
