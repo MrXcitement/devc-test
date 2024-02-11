@@ -40,7 +40,7 @@ die() {
 success "Entered container"
 
 log "Configure the exercism client"
-exercism configure -w /workspaces/devc-images/src -t f871b9c8-d5e7-455d-8887-db8037144b17
+exercism configure -w .. -t ${TOKEN}
 if [[ $? -gt 0 ]]; then
     die "Failed to configure exercism cli"
 fi

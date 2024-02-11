@@ -21,3 +21,4 @@ jobs:
         with:
           subFolder: images/${{ matrix.image }}
           runCmd: bash ./test.sh
+          push: never
